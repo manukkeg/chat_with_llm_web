@@ -11,7 +11,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.document_loaders import PyPDFLoader
 import os
 
-os.environ["OPENAI_API_KEY"] = 
+os.environ["OPENAI_API_KEY"] = st.secrets["openai_api_key"]
 
 st.set_page_config(page_title = "LLM for chat with websites", page_icon="🌐")
 st.title("Chat with websites")
